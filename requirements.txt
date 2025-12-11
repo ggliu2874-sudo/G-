@@ -1,0 +1,4 @@
+flask
+line-bot-sdk
+pinecone
+pinecone-plugin-assistant
