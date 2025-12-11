@@ -29,7 +29,7 @@ def ask_pinecone_rag(question: str) -> str:
         from pinecone_plugins.assistant.models.chat import Message
         
         pc = Pinecone(api_key=PINECONE_API_KEY)
-        assistant = pc.assistant.Assistant(assistant_name="閱讀pdf")
+        assistant = pc.assistant.Assistant(assistant_name="readpdf")
         
         msg = Message(content=question)
         resp = assistant.chat(messages=[msg])
